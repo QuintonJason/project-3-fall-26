@@ -1,1 +1,32 @@
 /* Place CSS styles here */
+.outer-box {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 100px auto;
+    width: 200px;
+}
+
+.ball {
+    width: 25px;
+    height: 25px;
+    border-radius: 9999px;
+    background-color: blue;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    right: -12px;
+    top: -12px;
+}
+
+.ball-1 {
+    background-color: yellow;
+}
+
+span {
+    font-size: 18px;
+    padding: 12px;
+    display: inline-block;
+}

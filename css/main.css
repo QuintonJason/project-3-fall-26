@@ -20,6 +20,12 @@
     transform: rotate(45deg);
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .box {
+        transition: none;
+    }
+}
+
 .ball {
     width: 25px;
     height: 25px;
@@ -135,6 +141,12 @@ span {
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .cow-wrapper {
+        transition: none;
+    }
+}
+
 .cow-wrapper:hover {
     transform: rotate(360deg);
 
@@ -155,5 +167,11 @@ span {
     .cow {
         width: 100px;
         transition: all 3s ease;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cow {
+        transition: none;
     }
 }

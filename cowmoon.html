@@ -32,6 +32,28 @@
 
   </div>
 
+
+  <audio id="global-player"></audio>
+
+  <div class="button-wrapper">
+    <button class="hvr-pop button" onclick="playTrack('./audio/bewitched_nose.mp3')">Play Bewitched</button>
+    <button class="hvr-pop button" onclick="playTrack('./audio/sonic_breathe_effect.mp3')">Play Sonic</button>
+  </div>
+
+
+  <script>
+  function playTrack(audioUrl) {
+    const player = document.getElementById('global-player');
+
+    // Change the source URL to the new track
+    player.src = audioUrl;
+
+    // Force browser to load the new file structure and play
+    player.load();
+    player.play();
+  }
+  </script>
+
   <script src="js/main.js"></script>
 </body>
 

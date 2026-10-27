@@ -94,6 +94,26 @@ span {
   animation-direction: normal, alternate;
 }
 
+/* Pop */
+@keyframes hvr-pop {
+  50% {
+    transform: scale(1.2);
+  }
+}
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+  animation-name: hvr-pop;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+
 /* Cowmoon section */
 .cowmoon {
     background-image:url(../img/night-sky.avif);
@@ -174,4 +194,27 @@ span {
     .cow {
         transition: none;
     }
+}
+
+#letter-l {
+    transition: all 2s ease-in-out;
+}
+
+#letter-l:hover {
+    transform: rotate(360deg);
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    padding: 10px 12px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
 }
